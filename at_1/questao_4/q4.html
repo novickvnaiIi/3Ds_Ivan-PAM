@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4 - PAM</title>
+
+    <script>
+        function bigImg(x) {
+          x.style.height = "600px";
+          x.style.width = "600px";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "300px";
+          x.style.width = "300px";
+        }
+    </script>
+
+</head>
+<body onload="carrega()">
+    <h2> 1 - Exemplo de 'onmouseover' ↓</h2>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="imgs/cazecoin.jpg" alt="Smiley" width="300" height="300">
+
+    <br><br>
+    <h2>2 - Exemplo de 'onfocus' ↓</h2>
+    <script>
+        function myFunction(x) {
+          x.style.background = "purple";
+        }
+    </script>
+    Aoba, escreve alguma coisa ai: <input type="text" onfocus="myFunction(this)">
+
+    <br><br>
+    <h2>3 - Exemplo de 'onchange' ↓</h2>
+    
+    <p>Escolha uma personalidade daora da net</p>
+
+    <select id="mySelect" onchange="paranaue()">
+        <option>Nenhuma</option>
+        <option value="Chico moeeeeeedas">Chicoin</option>
+        <option value="Casimito">Casimito</option>
+        <option value="Adam Sandler">Adam Sandler</option>
+        <option value="Thomas Shelby">Thomas Shelby</option>
+    </select>
+
+    <p>quando vc selecionar uma celebridade da net, a função dará um output com o nome do ser humano.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      function paranaue() {
+        var x = document.getElementById("mySelect").value;
+        document.getElementById("demo").innerHTML = "You selected: " + x;
+      }
+    </script>
+
+    <h2>4 - Um extra! ↓</h2>
+    
+    <script>
+      function carrega() {
+        alert("ta carregando perai");
+      }
+    </script>
+    <p>Toda vez que a página for carregada, aparecerá um alert.</p>
+
+</body>
+</html>

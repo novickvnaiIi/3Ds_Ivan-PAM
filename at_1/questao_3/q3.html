@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3 - PAM</title>
+</head>
+<body>
+    <!-- id="dom_id" -> variavel no script com cor roxa -->
+    <p id="dom_id">aoba</p>
+    <p>aoba</p>
+    <p class="text">aoba</p>
+    <p class="sel"></p>
+    <hr>
+    <script>
+        var identificador = document.getElementById("dom_id");
+        identificador.style.color = "#836FFF"
+
+        var tagname = document.getElementsByTagName("p")[1];
+        tagname.style.color = "#5F9EA0"
+
+        var cl = document.getElementsByClassName("text")[0];
+        cl.style.color = "#f9ff33"
+
+        document.querySelector(".sel").innerHTML = "Adicionado com query";
+
+        var classificadorAll = document.querySelectorAll('.classificacao')[2]
+        classificadorAll.style.color = "#7CFC00" 
+        
+    </script>
+</body>
+</html>
